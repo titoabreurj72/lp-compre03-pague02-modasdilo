@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modas Dilô | Promoção Compre 3 Pague 2 - Moda Praia e Moda Fitness</title>
+    <meta name="description" content="Renove seu guarda-roupa com a Modas Dilô! Promoção Compre 3 e Pague 2 em biquínis, maiôs, saídas de praia, leggings, tops e moda fitness. Aproveite!">
+    <meta name="keywords" content="moda praia, moda fitness, biquíni, roupa de academia, maiô, saída de praia, legging, top fitness, conjunto fitness, comprar biquíni online, modas dilô">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'dilo-peach': '#ffece6',
+                        'dilo-peach-alt': '#feece5',
+                        'dilo-blue': '#1c2a4a',
+                        'dilo-green-start': '#27ae60',
+                        'dilo-green-end': '#06873d',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        body { font-family: 'Montserrat', sans-serif; background-color: #FFFFFF; color: #000000; }
+        .text-dilo-blue { color: #1c2a4a; }
+        .bg-dilo-peach { background-color: #ffece6; }
+        .btn-gradient { background: linear-gradient(90deg, #27ae60 0%, #06873d 100%); transition: all 0.3s ease; }
+        .btn-gradient:hover { box-shadow: 0 10px 20px rgba(6, 135, 61, 0.3); transform: translateY(-2px); }
+        .shine-effect { position: relative; overflow: hidden; }
+        .shine-effect::after { content: ''; position: absolute; top: -50%; left: -100%; width: 50%; height: 200%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent); transform: rotate(45deg); animation: shine 3s infinite; }
+        @keyframes shine { 0% { left: -100%; } 50%, 100% { left: 200%; } }
+    </style>
+</head>
+<body class="antialiased overflow-x-hidden">
+
+    <section class="bg-dilo-peach pt-12 pb-20 md:pt-20 md:pb-28">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                <div class="w-full md:w-1/2">
+                    <span class="inline-block py-1 px-3 rounded-full bg-dilo-blue text-white text-sm font-semibold mb-4 tracking-wide uppercase">Oferta por tempo limitado</span>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-dilo-blue leading-tight mb-6">
+                        Compre 3, Pague 2!<br>
+                        <span class="text-3xl md:text-4xl font-bold">Em Moda Praia e Fitness</span>
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8">
+                        Conforto, beleza e leveza para os seus treinos e dias de sol. Escolha 3 peças entre <strong class="text-dilo-blue">biquínis, roupas de academia, saídas de praia e conjuntos</strong>, e a peça de menor valor sai totalmente <strong>DE GRAÇA!</strong>
+                    </p>
+                    <a href="#produtos" class="btn-gradient text-white font-bold text-lg px-10 py-5 rounded-full inline-block shine-effect text-center w-full md:w-auto">
+                        🛒 Aproveitar Promoção Agora
+                    </a>
+                </div>
+                <div class="w-full md:w-1/2 relative">
+                    <div class="aspect-[3/4] md:aspect-square bg-white rounded-3xl shadow-2xl overflow-hidden border-4 border-white flex items-center justify-center relative">
+                        <img src="URL_DA_IMAGEM_AMARELA_AQUI.jpg" alt="Moda Praia Modas Dilô" class="w-full h-full object-cover absolute inset-0 z-0">
+                        <p class="text-gray-400 font-bold z-10 text-center bg-white/80 p-4 rounded">[ESPAÇO: Imagem Modelo Biquíni Amarelo]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 bg-dilo-blue text-white shadow-inner">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 text-center">
+                <h2 class="text-2xl font-bold">A promoção termina em:</h2>
+                <div class="flex gap-4" id="countdown">
+                    <div class="bg-white/10 rounded-lg p-3 min-w-[70px]">
+                        <div class="text-3xl font-bold text-dilo-peach" id="days">00</div>
+                        <div class="text-xs uppercase mt-1">Dias</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-3 min-w-[70px]">
+                        <div class="text-3xl font-bold text-dilo-peach" id="hours">00</div>
+                        <div class="text-xs uppercase mt-1">Horas</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-3 min-w-[70px]">
+                        <div class="text-3xl font-bold text-dilo-peach" id="minutes">00</div>
+                        <div class="text-xs uppercase mt-1">Min</div>
+                    </div>
+                    <div class="bg-white/10 rounded-lg p-3 min-w-[70px]">
+                        <div class="text-3xl font-bold text-dilo-peach" id="seconds">00</div>
+                        <div class="text-xs uppercase mt-1">Seg</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos" class="py-20">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex flex-col md:flex-row items-center gap-12 mb-24">
+                <div class="w-full md:w-1/2">
+                    <div class="aspect-[4/5] bg-gray-100 rounded-3xl shadow-xl overflow-hidden relative">
+                         <img src="URL_DA_IMAGEM_FITNESS_ROXA_AQUI.jpg" alt="Conjunto Moda Fitness Legging e Top" class="w-full h-full object-cover absolute inset-0 z-0">
+                         <p class="text-gray-400 font-bold z-10 text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/80 p-2 rounded">[ESPAÇO: Imagem Conjunto Fitness Lilás]</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-dilo-blue mb-6">Moda Fitness: Treine com Máximo Conforto</h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Eleve o nível do seu treino com as nossas peças de <strong>roupa de academia</strong>. Nossa linha inclui <strong>leggings de alta compressão, tops fitness com sustentação perfeita e conjuntos esportivos</strong> que não marcam e não ficam transparentes. 
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3"><span class="text-green-600 font-bold text-xl">✓</span> Modelagem anatômica que valoriza o corpo</li>
+                        <li class="flex items-center gap-3"><span class="text-green-600 font-bold text-xl">✓</span> Tecidos respiráveis e de secagem rápida</li>
+                        <li class="flex items-center gap-3"><span class="text-green-600 font-bold text-xl">✓</span> Ideal para musculação, yoga, corrida ou dia a dia</li>
+                    </ul>
+                    <a href="https://www.modasdilo.com.br/moda-fitness/" class="btn-gradient text-white font-bold px-8 py-4 rounded-full inline-block">Ver Coleção Fitness</a>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12 mb-24">
+                <div class="w-full md:w-1/2">
+                    <div class="aspect-[4/5] bg-gray-100 rounded-3xl shadow-xl overflow-hidden relative">
+                        <img src="URL_DA_IMAGEM_BIQUINI_AQUI.jpg" alt="Biquínis e Maiôs Moda Praia 2026" class="w-full h-full object-cover absolute inset-0 z-0">
+                        <p class="text-gray-400 font-bold z-10 text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/80 p-2 rounded">[ESPAÇO: Imagem Biquíni Roxo ou Saída Azul]</p>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-dilo-blue mb-6">Moda Praia 2026: Elegância à Beira-Mar</h2>
+                    <p class="text-lg mb-6 leading-relaxed">
+                        Aproveite os dias de sol com a mais sofisticada linha de <strong>moda praia</strong>. Temos uma curadoria impecável de <strong>biquínis, maiôs elegantes e saídas de praia luxuosas</strong> que garantem versatilidade do mergulho ao passeio no fim de tarde.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center gap-3"><span class="text-green-600 font-bold text-xl">✓</span> Biquínis cintura alta, cortininha e tomara que caia</li>
+                        <li class="flex items-center gap-3"><span class="text-green-600 font-bold text-xl">✓</span> Saídas de praia em tecidos leves e esvoaçantes</li>
+                        <li class="flex items-center gap-3"><span class="text-green-600 font-bold text-xl">✓</span> Cores e estampas exclusivas da nova estação</li>
+                    </ul>
+                    <a href="https://www.modasdilo.com.br/moda-praia/" class="btn-gradient text-white font-bold px-8 py-4 rounded-full inline-block">Ver Coleção Praia</a>
+                </div>
+            </div>
+
+            <div class="bg-dilo-peach rounded-3xl p-10 md:p-16 shadow-lg text-center">
+                <h2 class="text-3xl font-extrabold text-dilo-blue mb-4">Misture e Combine do Seu Jeito!</h2>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
+                    Na promoção <strong>Compre 3, Pague 2</strong>, você tem total liberdade. Pode levar 2 biquínis e 1 legging, ou 2 tops fitness e 1 saída de praia. O sistema da loja calcula automaticamente e a peça de menor valor sai 100% grátis no carrinho!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="https://www.modasdilo.com.br" class="btn-gradient text-white font-bold px-10 py-5 rounded-full inline-block text-lg shine-effect">Montar Meu Kit Agora</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden flex flex-col md:flex-row">
+                <div class="w-full md:w-2/5 bg-dilo-blue p-10 flex flex-col justify-center text-white">
+                    <h3 class="text-3xl font-bold mb-4">Ganhe 10% OFF 🎁</h3>
+                    <p class="mb-6 text-gray-300">Cadastre-se para receber novidades da Modas Dilô e ganhe um cupom de 10% de desconto para usar na sua próxima compra (não cumulativo com o Leve 3 Pague 2).</p>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li>✨ Novidades em primeira mão</li>
+                        <li>✨ Ofertas exclusivas VIP</li>
+                        <li>✨ Dicas de moda e bem-estar</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-3/5 p-10">
+                    <form id="leadForm" class="space-y-5">
+                        <div>
+                            <label class="block text-sm font-bold text-dilo-blue mb-1">Nome Completo</label>
+                            <input type="text" id="nome" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500" placeholder="Digite seu nome">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-dilo-blue mb-1">E-mail</label>
+                            <input type="email" id="email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500" placeholder="seu@email.com">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-dilo-blue mb-1">WhatsApp</label>
+                            <input type="tel" id="whatsapp" required class="w-full px-4 py-3 bg-gray-50 border border-gray-300 rounded-lg focus:outline-none focus:border-green-500 focus:ring-1 focus:ring-green-500" placeholder="(11) 99999-9999">
+                        </div>
+                        <button type="submit" class="w-full btn-gradient text-white font-bold text-lg py-4 rounded-lg shadow-lg">Quero Meu Cupom!</button>
+                    </form>
+                    <div id="successMessage" class="hidden mt-6 p-4 bg-green-50 border border-green-200 rounded-lg text-center">
+                        <p class="text-green-700 font-bold">✅ Tudo certo!</p>
+                        <p class="text-green-600 text-sm mt-1">Seu cupom será enviado para o e-mail cadastrado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dilo-blue py-10 text-center">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-dilo-peach mb-2">Modas Dilô</h2>
+            <p class="text-gray-400 text-sm mb-6">Conforto, beleza e leveza.<br>Rua Almirante Ary Rongel 445 - Sala 210, Rio de Janeiro, RJ</p>
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://www.modasdilo.com.br/" class="text-white hover:text-dilo-peach transition">Loja Online</a>
+                <a href="https://www.instagram.com/modasdilo/" target="_blank" class="text-white hover:text-dilo-peach transition">Instagram</a>
+            </div>
+            <p class="text-xs text-gray-500">© 2026 Modas Dilô. Todos os direitos reservados. Promoção válida de 19/02/2026 a 26/02/2026.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lógica do Contador Regressivo
+        function updateCountdown() {
+            // Data de encerramento: 26 de Fevereiro de 2026 às 23:59:59
+            const end = new Date('2026-02-26T23:59:59').getTime();
+            const now = new Date().getTime();
+            const dist = end - now;
+            
+            if (dist < 0) {
+                document.getElementById('countdown').innerHTML = '<p class="text-xl font-bold text-dilo-peach">Promoção Encerrada!</p>';
+                return;
+            }
+
+            const d = Math.floor(dist / (1000 * 60 * 60 * 24));
+            const h = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+            const s = Math.floor((dist % (1000 * 60)) / 1000);
+            
+            document.getElementById('days').textContent = String(d).padStart(2, '0');
+            document.getElementById('hours').textContent = String(h).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(m).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(s).padStart(2, '0');
+        }
+        
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Lógica do Formulário (Lead)
+        document.getElementById('leadForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Aqui você pode integrar com o backend ou API futuramente
+            document.getElementById('leadForm').classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
